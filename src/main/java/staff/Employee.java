@@ -1,12 +1,16 @@
 package staff;
 
-public abstract class Employee {
+public class Employee {
 
     private String name;
     private int niNumber;
     private int salary;
 
-//  constructor
+    public Employee() {
+        this.name = name;
+        this.niNumber = niNumber;
+        this.salary = salary;
+    }
 
     public String getName() {
         return name;
