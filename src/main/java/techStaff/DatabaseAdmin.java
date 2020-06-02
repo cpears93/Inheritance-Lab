@@ -1,26 +1,10 @@
 package techStaff;
 
-public class DatabaseAdmin {
+import staff.Employee;
 
-    private String name;
-    private int niNumber;
-    private int salary;
+public class DatabaseAdmin extends Employee {
 
-    public DatabaseAdmin(String name, int niNumber, int salary) {
-        this.name = name;
-        this.niNumber = niNumber;
-        this.salary = salary;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public int getNiNumber() {
-        return niNumber;
-    }
-
-    public int getSalary() {
-        return salary;
+    public DatabaseAdmin(String name, String niNumber, double salary) {
+        super(name, niNumber, salary);
     }
 }

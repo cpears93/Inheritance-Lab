@@ -1,20 +1,20 @@
 package management;
 
-public class Director {
+public class Director extends Manager{
 
-    String name;
-    int budget;
+    private double budget;
 
-    public Director(String name, int budget) {
-        this.name = name;
+    public Director(String name, String niNumber, double salary, String deptName, double budget) {
+        super(name, niNumber, salary, deptName);
         this.budget = budget;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getBudget() {
+    public double getBudget(){
         return budget;
     }
+
+    public double payBonus() {
+        return getSalary() * 0.02;
+    }
+
 }

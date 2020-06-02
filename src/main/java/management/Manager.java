@@ -1,13 +1,14 @@
 package management;
 
-public class Manager {
+import staff.Employee;
+
+public class Manager extends Employee {
 
     private String deptName;
-    private String employee;
 
-    public Manager(String deptName, String employee) {
+    public Manager(String name, String niNumber, double salary, String deptName) {
+        super(name, niNumber, salary);
         this.deptName = deptName;
-        this.employee = employee;
     }
 
     public String getDeptName() {
